@@ -1,0 +1,33 @@
+{
+  "name": "reto-contratos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agente conversacional de registro de contratos vigentes — Reto 2 Periferia IT Group",
+  "scripts": {
+    "dev": "tsx scripts/empaquetar.ts && next dev",
+    "prebuild": "tsx scripts/empaquetar.ts",
+    "build": "next build",
+    "start": "next start",
+    "demo": "tsx demo.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "3.0.135",
+    "@ai-sdk/react": "3.0.320",
+    "ai": "6.0.317",
+    "next": "^16.4.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
